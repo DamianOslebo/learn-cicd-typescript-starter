@@ -2,11 +2,6 @@ import { describe, expect, test } from "vitest";
 import { getAPIKey } from "../api/auth.js";
 import { IncomingHttpHeaders } from "http";
 
-const person = {
-  isActive: true,
-  age: 32,
-};
-
 describe("API Auth", () => {
   const headers: IncomingHttpHeaders = {
     authorization: "ApiKey my-secret-key",
